@@ -1,0 +1,11 @@
+#Fibonacci Generator
+def generate_fib(n):
+  a = 1
+  b = 1
+  for i in range(n):
+    yield a
+    a,b = b, a+b
+
+#replace 10 with desired length of the sequence
+for num in generate_fib(10):
+print(num)
